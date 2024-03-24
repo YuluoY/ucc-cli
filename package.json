@@ -1,0 +1,27 @@
+{
+  "name": "ucc-cli",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "ucc": "bin/index.js",
+    "ucc-cli": "bin/index.js"
+  },
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "4.1.2",
+    "commander": "^12.0.0",
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.7.0",
+    "handlebars": "^4.7.8",
+    "inquirer": "8.2.5",
+    "kolorist": "^1.8.0",
+    "ora": "5.4.1"
+  }
+}
