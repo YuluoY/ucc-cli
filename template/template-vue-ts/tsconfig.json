@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+    "target": "ESNext",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "components": ["./src/components/*"]
+    },
+    "types": ["vite/client"]
+  },
+  // 继承一些基本配置
+  "extends": ["@vue/tsconfig/tsconfig.json", "@vue/tsconfig/tsconfig.lib.json"],
+  // 需要被编译的目录/文件
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/auto-import.d.ts"
+  ],
+  // 不需要被编译的目录/文件
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.spec.d.ts",
+    "**/*.spec.d.tsx",
+    "**/*.spec.js",
+    "**/*.spec.jsx",
+    "**/*.spec.cjs",
+    "**/*.spec.mjs"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    }
+  ]
+}
